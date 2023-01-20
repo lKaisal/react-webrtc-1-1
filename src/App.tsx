@@ -3,7 +3,7 @@ import { v4 as uuid } from 'uuid';
 import VideoChat from './components/VideoChat';
 import TextChat from './components/TextChat';
 import myWs from './ws';
-import PeerConnection from 'peerConnection';
+import PeerConnection from './PeerConnection';
 import styles from './App.module.scss';
 
 function App() {
