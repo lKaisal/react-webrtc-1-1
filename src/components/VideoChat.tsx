@@ -55,7 +55,7 @@ const VideoChat = ({startCall, endCall, id, localSrc, remoteSrc}: VideoChatProps
       return;
     }
 
-    const config = { audio: false, video: true };
+    const config = { audio: true, video: true };
     
     startCall({isCaller: true, id, friendId, config});
   }

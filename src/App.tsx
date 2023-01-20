@@ -3,7 +3,7 @@ import { v4 as uuid } from 'uuid';
 import VideoChat from './components/VideoChat';
 import TextChat from './components/TextChat';
 import myWs from './ws';
-import PeerConnection from './PeerConnection';
+import PeerConnection from 'peerConnection';
 import styles from './App.module.scss';
 
 function App() {
@@ -60,7 +60,7 @@ function App() {
 
         setFromId(from);
 
-        startCall({ isCaller: false, id: clientId, friendId: from, config: { audio: false, video: true } });
+        startCall({ isCaller: false, id: clientId, friendId: from, config: { audio: true, video: true } });
         
         return;
       }

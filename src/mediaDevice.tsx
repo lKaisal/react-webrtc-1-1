@@ -14,7 +14,7 @@ class MediaDevice extends Emitter {
         facingMode: 'user',
         height: { min: 360, ideal: 720, max: 1080 }
       },
-      audio: false
+      audio: true
     };
 
     navigator.mediaDevices
