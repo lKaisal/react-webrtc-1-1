@@ -84,7 +84,7 @@ const VideoChat = ({startCall, endCall, id, localSrc, remoteSrc}: VideoChatProps
       </div>
       <div className={styles.videos}>
         <div className={styles.videoWrapper}>
-          <video id="localVideo" ref={localVideo} autoPlay></video>
+          <video id="localVideo" ref={localVideo} autoPlay muted></video>
         </div>
         <div className={styles.videoWrapper}>
           <video id="remoteVideo" ref={remoteVideo} autoPlay></video>
